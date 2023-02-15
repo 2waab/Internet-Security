@@ -1,0 +1,70 @@
+/* Google Fonts -  - */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/background-Blur.svg");
+    background-size: cover;
+    background-position: center center;
+}
+.content h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+}
+.content p {
+    text-align: right;
+    font-size: 22px;
+    width: 500px;
+    margin: 0 auto;
+    color: #000;
+}
+.content ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.content ul li {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 22px;
+    position: relative;
+    color: #000;
+}
+.content ul li::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+@media (max-width: 767px) {
+    .content h1 {
+        font-size: 28px;
+    }
+    .content p {
+        width: 300px;
+    }
+    .content ul {
+        width: 300px;
+    }
+    .content ul li::after {
+        top: 15px;
+    }
+}

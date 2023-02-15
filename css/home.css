@@ -1,0 +1,73 @@
+/* Google Fonts -  - */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+body {
+    background-color: #fff;
+}
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/background-Blur.svg");
+    background-size: cover;
+    background-position: center center;
+}
+.content header {
+    margin-bottom: 50px;
+}
+.content header i {
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+.content header h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+}
+.content .btns {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body .content .btns a {
+    color: #000;
+    text-decoration: none;
+}
+.content .btns a button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    border: 3px solid #000;
+    border-radius: 999999px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .content .btns {
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .btns a {
+        margin-top: 10px;
+    }
+    .content header i {
+        font-size: 40px;
+    }
+    .content header h1 {
+        font-size: 30px;
+    }
+}
